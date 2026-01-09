@@ -1,36 +1,13 @@
 <!DOCTYPE html>
 <html lang="sv">
 
-<link rel="stylesheet" href="/U1/style.css" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
+    <title>Position</title>
 
-    <style>
-        /* intern CSS */
+    <link rel="stylesheet" href="./style.css">
 
-        body {
-            background-color: rgb(226, 213, 188);
-            font-size: 1em;
-        }
-
-        p {
-            color: rgb(0, 0, 0);
-        }
-
-        section {
-            background-color: rgb(255, 255, 255);
-
-            padding: 0.1rem 1rem;
-
-            margin-bottom: 1rem;
-
-            border: 2px solid black;
-
-            border-radius: 1rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -64,7 +41,7 @@
         </button>
 
         <ul class="primary-navigation" id="primary-navigation">
-            <li><a class="nav-link" href="/index.html">Hem</a></li>
+            <li><a class="nav-link" href="../../index.html">Hem</a></li>
 
             <!-- Dropdown: Portfolio -->
             <li class="dropdown">
@@ -73,17 +50,21 @@
                     <li class="dropdown">
                         <a class="nav-link" href="#">Uppgifter</a>
                         <ul>
-                            <li><a class="nav-link" href="/U1/index.html" target="_blank">Uppgift 1: Hello World</a>
+                            <li><a class="nav-link" href="../U1/index.html" target="_blank">Uppgift 1: Hello World</a>
                             </li>
-                            <li><a class="nav-link" href="/U2/index.html" target="_blank">Uppgift 2: Semantiska
+                            <li><a class="nav-link" href="../U2/index.html" target="_blank">Uppgift 2: Semantiska
                                     taggar</a></li>
-                            <li><a class="nav-link" href="/U3/index.html" target="_blank">Uppgift 3: Sökvägar &amp;
+                            <li><a class="nav-link" href="../U3/index.html" target="_blank">Uppgift 3: Sökvägar &amp;
                                     Länkar</a></li>
-                            <li><a class="nav-link" href="/U4/index.html" target="_blank">Uppgift 4: Bilder &amp;
+                            <li><a class="nav-link" href="../U4/index.html" target="_blank">Uppgift 4: Bilder &amp;
                                     Video</a></li>
-                            <li><a class="nav-link" href="/U5/index.html" target="_blank">Uppgift 5: Flex &amp; Grid</a>
+                            <li><a class="nav-link" href="../U5/index.html" target="_blank">Uppgift 5: Flex &amp;
+                                    Grid</a>
                             </li>
-                            <li><a class="nav-link" href="/U6/index.html" target="_blank">Uppgift 6: CSS &amp; Grid</a>
+                            <li><a class="nav-link" href="../U6/index.html" target="_blank">Uppgift 6: CSS &amp;
+                                    Grid</a>
+                            </li>
+                            <li><a class="nav-link" href="../U7/index.html" target="_blank">Uppgift 7: Position</a>
                             </li>
                         </ul>
                     </li>
@@ -100,47 +81,18 @@
             <li class="dropdown">
                 <a class="nav-link" href="#">Om</a>
                 <ul>
-                    <li><a class="nav-link" href="/hemsida/about.html">Om mig</a></li>
+                    <li><a class="nav-link" href="../../hemsida/about.html">Om mig</a></li>
                 </ul>
             </li>
     </nav>
 
-    <header>
-        <h1>Hello World!</h1>
-        <p>Information om webbsidan</p>
-
-    </header>
-
-    <main>
-        <h2>Grundläggande element</h2>
-        <section>
-            <h3>Meta</h3>
-            <p>html - huvudelement som innehåller hela html - filens element</p>
-            <p>head - innehåller metadata, länkar till CSS etc</p>
-            <p>body - innehåller allt som syns på webbsidan</p>
-            <p>style - inbäddad CSS</p>
-            
-        </section>
-
-        <section>
-            <h3>Layout</h3>
-            <p>main - innehållet på sidan, innehåller flera sections</p>
-            <p>header - sidhuvud innehåller ev rubrik och ev information om sidan</p>
-            <p>section - sektion med innehåll</p>
-            <p>footer - beskriver sidfot</p>
-
-        </section>
-
-        <section>
-            <h3>Text och Rubriker</h3>
-            <p>p - paragraf</p>
-            <p>h1-h6 - Rubriker i olika storlekar</p>
-
-        </section>
-    </main>
-
-    <footer>
-    </footer>
+    <div class="box">
+        <div class="parent">parent
+            <div class="child-one child">one</div>
+            <div class="child-two child">two</div>
+            <div class="child-three child">three</div>
+        </div>
+    </div>
 </body>
 
 </html>

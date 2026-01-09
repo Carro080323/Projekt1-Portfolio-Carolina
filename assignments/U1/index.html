@@ -4,9 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./about.css">
+    <title>Hello World!</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+        /* intern CSS */
+
+        body {
+            background-color: rgb(226, 213, 188);
+            font-size: 1em;
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+        }
+
+        section {
+            background-color: rgb(255, 255, 255);
+
+            padding: 0.1rem 1rem;
+
+            margin-bottom: 1rem;
+
+            border: 2px solid black;
+
+            border-radius: 1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,7 +65,7 @@
         </button>
 
         <ul class="primary-navigation" id="primary-navigation">
-            <li><a class="nav-link" href="../index.html">Hem</a></li>
+            <li><a class="nav-link" href="../../index.html">Hem</a></li>
 
             <!-- Dropdown: Portfolio -->
             <li class="dropdown">
@@ -49,27 +74,22 @@
                     <li class="dropdown">
                         <a class="nav-link" href="#">Uppgifter</a>
                         <ul>
-                            <li><a class="nav-link" href="../assignments/U1/index.html" target="_blank">Uppgift 1: Hello
-                                    World</a>
+                            <li><a class="nav-link" href="../U1/index.html" target="_blank">Uppgift 1: Hello World</a>
                             </li>
-                            <li><a class="nav-link" href="../assignments/U2/index.html" target="_blank">Uppgift 2:
-                                    Semantiska
+                            <li><a class="nav-link" href="../U2/index.html" target="_blank">Uppgift 2: Semantiska
                                     taggar</a></li>
-                            <li><a class="nav-link" href="../assignments/U3/index.html" target="_blank">Uppgift 3:
-                                    Sökvägar &amp;
+                            <li><a class="nav-link" href="../U3/index.html" target="_blank">Uppgift 3: Sökvägar &amp;
                                     Länkar</a></li>
-                            <li><a class="nav-link" href="../assignments/U4/index.html" target="_blank">Uppgift 4:
-                                    Bilder &amp;
+                            <li><a class="nav-link" href="../U4/index.html" target="_blank">Uppgift 4: Bilder &amp;
                                     Video</a></li>
-                            <li><a class="nav-link" href="../assignments/U5/index.html" target="_blank">Uppgift 5: Flex
-                                    &amp; Grid</a>
+                            <li><a class="nav-link" href="../U5/index.html" target="_blank">Uppgift 5: Flex &amp;
+                                    Grid</a>
                             </li>
-                            <li><a class="nav-link" href="../assignments/U6/index.html" target="_blank">Uppgift 6: CSS
-                                    &amp; Grid</a>
+                            <li><a class="nav-link" href="../U6/index.html" target="_blank">Uppgift 6: CSS &amp;
+                                    Grid</a>
                             </li>
-                            <li><a class="nav-link" href="../assignments/U7/index.html" target="_blank">Uppgift 7:
-                                    Position
-                                </a></li>
+                            <li><a class="nav-link" href="../U7/index.html" target="_blank">Uppgift 7: Position</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -85,46 +105,47 @@
             <li class="dropdown">
                 <a class="nav-link" href="#">Om</a>
                 <ul>
-                    <li><a class="nav-link" href="./about.html">Om mig</a></li>
+                    <li><a class="nav-link" href="../../hemsida/about.html">Om mig</a></li>
                 </ul>
             </li>
-        </ul>
     </nav>
 
+    <header>
+        <h1>Hello World!</h1>
+        <p>Information om webbsidan</p>
+
+    </header>
 
     <main>
-        <section class="about-section">
-            <h1 class="main-heading">Om mig</h1>
+        <h2>Grundläggande element</h2>
+        <section>
+            <h3>Meta</h3>
+            <p>html - huvudelement som innehåller hela html - filens element</p>
+            <p>head - innehåller metadata, länkar till CSS etc</p>
+            <p>body - innehåller allt som syns på webbsidan</p>
+            <p>style - inbäddad CSS</p>
 
-            <div class="about-layout">
-                <div>
-                    <p class="body-text"> Hej! Jag heter Carolina Hedberg och går andra året på teknikprogrammet, på
-                        Drottning Blankas
-                        Gymnasieskola.
-                        Jag är intresserad av design, musik, webbutveckling och kreativt skapande, och gillar att
-                        kombinera
-                        teknik
-                        med kreativitet.
-                        Den här portfolion har jag gjort för att visa mina projekt och hur jag utvecklas inom
-                        programmering
-                        och
-                        design.</p>
-
-                    <h2 class="heading">Kontakt</h2>
-                    <ul>
-                        <li class="body-text">Vill du komma i kontakt med mig? Mejla gärna på
-                            <a href="mailto:carolina@example.com">carolina.hedberg@elev.ga.dbgy.se</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img class="about-images" src="../img/Tanya_Singh_1024-scaled.webp" alt="Porträttbild">
-                </div>
         </section>
 
+        <section>
+            <h3>Layout</h3>
+            <p>main - innehållet på sidan, innehåller flera sections</p>
+            <p>header - sidhuvud innehåller ev rubrik och ev information om sidan</p>
+            <p>section - sektion med innehåll</p>
+            <p>footer - beskriver sidfot</p>
 
+        </section>
 
+        <section>
+            <h3>Text och Rubriker</h3>
+            <p>p - paragraf</p>
+            <p>h1-h6 - Rubriker i olika storlekar</p>
+
+        </section>
     </main>
+
+    <footer>
+    </footer>
 </body>
 
 </html>

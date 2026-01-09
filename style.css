@@ -95,7 +95,7 @@ main {
   text-align: center;
 }
 
-header{
+header {
   padding-top: 2rem;
   padding-bottom: 0.5rem;
   width: 70%;
@@ -148,7 +148,7 @@ header{
   text-align: left;
 }
 
-.main-heading{
+.main-heading {
   font-size: 1.5rem;
   font-weight: 1.5rem;
 }
@@ -173,33 +173,34 @@ header{
   text-decoration: none;
   color: inherit;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfoliocard:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgb(255, 255, 255); /* glänsande vit */
+  transform: scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
 .portfoliocard::after {
   content: "";
   position: absolute;
   top: 0;
-  left: -150%;  /* Startposition – osynlig */
+  left: -150%;
+  /* Startposition – osynlig */
   width: 120%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0) 0%,
-    hsla(0, 0%, 100%, 0.402) 50%,
-    rgba(255,255,255,0) 100%
-  );
-  transition: left 3.5s ease; /* ← långsammare om du vill */
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      hsla(0, 0%, 100%, 0.402) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transition: left 3.5s ease;
+  /* ← långsammare om du vill */
 }
 
 .portfoliocard:hover::after {
-  left: 100%; /* ← Slutar på höger sida och STANNAR där */
+  left: 100%;
+  /* ← Slutar på höger sida och STANNAR där */
 }
 
 /* ====== PORTFOLIO TEXT ====== */
@@ -208,10 +209,14 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; /* ser till att rubrik + text ligger till vänster */
-  gap: 0.5rem; /* avstånd mellan rubrik och text */
-  padding: 1.5rem; /* liten padding utan att göra kortet för stort */
-  height: 100%; /* tar upp hela höjden av kortet */
+  align-items: flex-start;
+  /* ser till att rubrik + text ligger till vänster */
+  gap: 0.5rem;
+  /* avstånd mellan rubrik och text */
+  padding: 1.5rem;
+  /* liten padding utan att göra kortet för stort */
+  height: 100%;
+  /* tar upp hela höjden av kortet */
   box-sizing: border-box;
 }
 
@@ -228,15 +233,15 @@ header{
   color: var(--clr-copy);
   text-align: left;
   line-height: 1.3;
-  margin: 0; 
+  margin: 0;
   padding-top: 0.5rem;
   padding-right: 2rem;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* ====== PORTFOLIO IMAGE ====== */
 
-.portfolio-image img {
+.portfolio-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -244,7 +249,7 @@ header{
 }
 
 /* ====== PORTFOLIO KNAPP ====== */
-.buttom{
+.button {
   display: block;
   color: var(--clr-cta);
   font-family: var(--ff-primary);
@@ -257,36 +262,38 @@ header{
   border-radius: 1rem;
   border: 0.1rem solid #ccc;
   background-color: var(--clr-primary);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
-.buttom:hover {
+.button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgb(255, 255, 255); /* glänsande vit */
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  /* glänsande vit */
   position: relative;
   overflow: hidden;
 }
 
-.buttom::after {
+.button::after {
   content: "";
   position: absolute;
   top: 0;
-  left: -150%;  /* Startposition – osynlig */
+  left: -150%;
+  /* Startposition – osynlig */
   width: 120%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0) 0%,
-    hsla(0, 0%, 100%, 0.402) 50%,
-    rgba(255,255,255,0) 100%
-  );
-  transition: left 3.5s ease; /* ← långsammare om du vill */
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      hsla(0, 0%, 100%, 0.402) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transition: left 3.5s ease;
+  /* ← långsammare om du vill */
 }
 
-.buttom:hover::after {
-  left: 100%; /* ← Slutar på höger sida och STANNAR där */
+.button:hover::after {
+  left: 100%;
+  /* ← Slutar på höger sida och STANNAR där */
 }
 
 

@@ -62,8 +62,6 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: var(--clr-primary);
-
 
   font-family: var(--ff-secondary);
   font-size: var(--menu-item-size);
@@ -84,18 +82,6 @@ nav {
   box-shadow: var(--clr-navbar-shadow);
 
   z-index: 1;
-}
-
-main {
-  display: grid;
-  place-content: center;
-  text-align: center;
-}
-
-header {
-  padding-top: 2rem;
-  padding-bottom: 0.5rem;
-  width: 70%;
 }
 
 
@@ -122,66 +108,6 @@ header {
   display: flex;
   align-items: center;
   gap: var(--menu-item-size);
-}
-
-
-.about-layout {
-  display: grid;
-  background-color: var(--clr-primary);
-  grid-template-columns: 3fr 1fr;
-  grid-column: span 2;
-  border-radius: 5rem;
-  border: 0.1rem solid #ccc;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-section {
-  margin: 0rem 4rem;
-}
-
-.main-heading {
-  color: var(--clr-cta);
-  padding-top: 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 2rem;
-}
-
-.heading {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--clr-cta);
-  text-transform: uppercase;
-  text-align: left;
-  margin: 0;
-  padding-left: 3rem;
-  text-decoration: underline;
-  letter-spacing: 0.25rem;
-}
-
-.body-text {
-  text-align: left;
-  color: var(--clr-copy);
-  line-height: 1.3;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  overflow: hidden;
-}
-
-.about-images {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5rem;
-  border: 0.1rem solid #ccc;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-a {
-  color: var(--clr-highlight);
 }
 
 /* image styling */
@@ -351,109 +277,54 @@ FIXME: OBS! om du kör horisontell meny bör du ändra till border-left här */
 }
 
 
-/***************************************
-RESPONSIVITET 
-****************************************/
+body {
+  font-family: sans-serif;
+  background-color: var(--clr-primary);
+  font-family: var(--ff-secondary);
+  font-size: var(--menu-item-size);
+  margin: 0;
+}
 
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.parent {
+  background-color: #40E0D0;
+  position: relative;
+  margin-inline: 2rem;
+  margin-top: 4rem;
+  padding: 2rem; 
+  font-family: sans-serif;
+  border-radius: 0.5rem; 
+  border: 0.1rem solid #3a3a3a;
+  width: 100%;
+}
 
-/* mobile view */
+.child-one, .child-two, .child-three {
+  padding: 1rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
 
-@media (width < 480px) {
+.child-one { 
+  background-color: #B19CD9; 
+}
 
+.child-two { 
+  background-color: #F08080; 
+  position: relative;
+}
 
-  /* öppna dropdown meny */
-  .dropdown:hover>ul,
-  .dropdown:focus-within>ul {
-    display: block;
+.child-three { 
+  background-color: #C1E1C1; 
+  position: relative;
+}
 
-    border-radius: 0;
-
-    width: 100%;
-  }
-
-  .dropdown ul .dropdown:hover>ul,
-  .dropdown ul .dropdown:focus-within>ul {
-    display: block;
-
-    left: 0;
-    top: 100%;
-  }
-
-
-  .hamburger-button {
-    display: grid;
-  }
-
-  /* ändrar länkar till block så de går att knacka på lättare */
-  .nav-link {
-    display: block;
-    position: relative;
-    padding-block: 1rem;
-    margin-block: 0;
-  }
-
-  /* ändra navigation så den fungerar som en mobilmeny - den börjar osynlig för den ska inte visas innan man trycker på hamburgarknappen */
-  .primary-navigation {
-    position: fixed;
-    inset: 0;
-    top: 2.4rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-    padding: 2rem 2rem;
-
-    background: var(--clr-navbar);
-    opacity: 0;
-
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out,
-      opacity 250ms ease-in-out;
-  }
-
-  /* när man trycker på hamburgarknappen öppnas själva menyn med transition - se menu.js */
-  .primary-navigation.open {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  nav {
-    justify-content: space-between;
-
-    width: 100%;
-    padding: calc(var(--menu-item-size) / 1.5) 1rem;
-  }
-
-
-  /* Morph hamburger button to open/close states */
-  .icon-hamburger .line {
-    transition: rotate 250ms ease-in,
-      transform 250ms 200ms ease-in,
-      opacity 250ms 200ms ease-in-out;
-
-    transform-origin: center;
-  }
-
-  .icon-hamburger.morphToClose .line {
-    transition: rotate 250ms 200ms ease-in-out,
-      transform 250ms ease-in-out,
-      opacity 250ms ease-in-out;
-
-    transform-origin: center;
-  }
-
-  .icon-hamburger.morphToClose .top {
-    transform: translateY(20px);
-    rotate: 45deg;
-  }
-
-  .icon-hamburger.morphToClose .middle {
-    rotate: -45deg;
-  }
-
-  .icon-hamburger.morphToClose .bottom {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
+.child:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
