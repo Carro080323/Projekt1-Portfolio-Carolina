@@ -67,6 +67,12 @@ article {
     margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .cssgrid-img {
     width: 100%;
     max-width: 80%;

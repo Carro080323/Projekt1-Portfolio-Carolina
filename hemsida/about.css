@@ -89,7 +89,6 @@ nav {
 main {
   display: grid;
   place-content: center;
-  text-align: center;
 }
 
 header {
@@ -137,7 +136,9 @@ header {
 
 .about-section {
   margin: 0rem 4rem;
+  text-align: center;
 }
+
 
 .main-heading {
   color: var(--clr-cta);
