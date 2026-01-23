@@ -2,16 +2,16 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om mig</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="./about.css">
-    <script src="../Dropdown-menu/menu.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animationer</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="menu.js" defer></script>
 </head>
 
-<body>
-    <nav>
+<body id="top">
+<nav>
         <div class="flex-layout">
             <!-- SVG-logotyp (kan ändra färg i CSS under svg g path) -->
             <svg class="logo" id="Lager_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.98 242.36">
@@ -41,7 +41,7 @@
         </button>
 
         <ul class="primary-navigation" id="primary-navigation">
-            <li><a class="nav-link" href="../index.html">Hem</a></li>
+            <li><a class="nav-link" href="../../index.html">Hem</a></li>
 
             <!-- Dropdown: Portfolio -->
             <li class="dropdown">
@@ -50,28 +50,23 @@
                     <li class="dropdown">
                         <a class="nav-link" href="#">Uppgifter</a>
                         <ul>
-                            <li><a class="nav-link" href="../assignments/U1/index.html" target="_blank">Uppgift 1: Hello
-                                    World</a>
+                            <li><a class="nav-link" href="../U1/index.html" target="_blank">Uppgift 1: Hello World</a>
                             </li>
-                            <li><a class="nav-link" href="../assignments/U2/index.html" target="_blank">Uppgift 2:
-                                    Semantiska
+                            <li><a class="nav-link" href="../U2/index.html" target="_blank">Uppgift 2: Semantiska
                                     taggar</a></li>
-                            <li><a class="nav-link" href="../assignments/U3/index.html" target="_blank">Uppgift 3:
-                                    Sökvägar &amp;
+                            <li><a class="nav-link" href="../U3/index.html" target="_blank">Uppgift 3: Sökvägar &amp;
                                     Länkar</a></li>
-                            <li><a class="nav-link" href="../assignments/U4/index.html" target="_blank">Uppgift 4:
-                                    Bilder &amp;
+                            <li><a class="nav-link" href="../U4/index.html" target="_blank">Uppgift 4: Bilder &amp;
                                     Video</a></li>
-                            <li><a class="nav-link" href="../assignments/U5/index.html" target="_blank">Uppgift 5: Flex
-                                    &amp; Grid</a>
+                            <li><a class="nav-link" href="../U5/index.html" target="_blank">Uppgift 5: Flex &amp;
+                                    Grid</a>
                             </li>
-                            <li><a class="nav-link" href="../assignments/U6/index.html" target="_blank">Uppgift 6: CSS
-                                    &amp; Grid</a>
+                            <li><a class="nav-link" href="../U6/index.html" target="_blank">Uppgift 6: CSS &amp;
+                                    Grid</a>
                             </li>
-                            <li><a class="nav-link" href="../assignments/U7/index.html" target="_blank">Uppgift 7:
-                                    Position
-                                </a></li>
-                            <li><a class="nav-link" href="../assignments/U8/index.html" target="_blank">Uppgift 8: Animationer</a>
+                            <li><a class="nav-link" href="../U7/index.html" target="_blank">Uppgift 7: Position</a>
+                            </li>
+                             <li><a class="nav-link" href="../U8/index.html" target="_blank">Uppgift 8: Animationer</a>
                             </li>
                         </ul>
                     </li>
@@ -88,47 +83,20 @@
             <li class="dropdown">
                 <a class="nav-link" href="#">Om</a>
                 <ul>
-                    <li><a class="nav-link" href="./about.html">Om mig</a></li>
+                    <li><a class="nav-link" href="../../hemsida/about.html">Om mig</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 
-
-    <main>
-        <section class="about-section">
-            <h1 class="main-heading">Om mig</h1>
-
-            <div class="about-layout">
-                <div>
-                    <p class="body-text"> Hej! Jag heter Carolina Hedberg och går andra året på teknikprogrammet, på
-                        Drottning Blankas
-                        Gymnasieskola.
-                        Jag är intresserad av design, musik, webbutveckling och kreativt skapande, och gillar att
-                        kombinera
-                        teknik
-                        med kreativitet.
-                        Den här portfolion har jag gjort för att visa mina projekt och hur jag utvecklas inom
-                        programmering
-                        och
-                        design.</p>
-
-                    <h2 class="heading">Kontakt</h2>
-                    <ul>
-                        <li class="body-text">Vill du komma i kontakt med mig? Mejla gärna på
-                            <a href="mailto:carolina@example.com">carolina.hedberg@elev.ga.dbgy.se</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <img class="about-images" src="../img/Tanya_Singh_1024-scaled.webp" alt="Porträttbild">
-                </div>
+    <body>
+        <main>
+            <p>Håll musen över bilden</p>
+            <div class="container">
+                <img src="../../img/butterfly.jpg" alt="Exempelbild" class="scale">
             </div>
-        </section>
-
-
-
-    </main>
-</body>
+            <a href="./box/anim.html" class="link" target="_blank">Klicka här för att komma till box-projekt</a>
+        </main>
+    </body>
 
 </html>
