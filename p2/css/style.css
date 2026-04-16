@@ -375,7 +375,7 @@ footer {
 
 .sidebar {
   position: sticky;
-  top: 2rem;
+  top: 5rem;
   padding: 1rem;
   background-color: #111827;
   height: fit-content;
