@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="En webbplats om grunderna i webbutveckling: HTML, CSS och hur webben fungerar.">
+  <title>Grunderna i Webbutveckling</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Hoppa till huvudinnehåll</a>
+
+  <nav aria-label="Huvudnavigation">
+    <span>Webbens & HTMLs historia</span>
+    <ul>
+      <li><a class="nav-link" href="../project2.html">Hem</a></li>
+      <li><a class="nav-link" href="../assets/grounds.html" aria-current="page">Grunderna</a></li>
+      <li><a class="nav-link" href="../assets/history.html">HTMLs historia</a></li>
+      <li><a class="nav-link" href="../assets/dom.html">Hur fungerar det?</a></li>
+      <li><a class="nav-link" href="../assets/access.html">Tillgänglighet</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <div class="hero-subpage">
+      <div class="hero-text">
+        <h1>Grunderna i Webbutveckling</h1>
+        <p>Lär dig hur HTML, CSS och JavaScript bygger upp den moderna webben.</p>
+      </div>
+      <div class="hero-image">
+        <img src="../img/html-page-structure.webp" alt="Struktur av ett HTML dokument" loading="lazy">
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main-layout" id="main-content">
+
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#meta">Meta</a></li>
+          <li><a href="#html-elements">HTML-element</a></li>
+          <li><a href="#semantik">Semantiska element</a></li>
+          <li><a href="#text">Text & Rubriker</a></li>
+          <li><a href="#layout">Layout (HTML)</a></li>
+          <li><a href="#css-typsnitt">CSS Typsnitt & stilar</a></li>
+          <li><a href="#css-farger">CSS Färger</a></li>
+          <li><a href="#css-layout">CSS Layout</a></li>
+          <li><a href="#css-storlek">CSS Storlek & marginal</a></li>
+          <li><a href="#css-effekter">CSS Effekter</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="content-ground">
+
+      <section id="meta">
+        <h2>Meta</h2>
+        <p><strong>&lt;!DOCTYPE&gt;</strong> – Specificerar HTML-versionen.</p>
+        <p><strong>&lt;html&gt;</strong> – Rotelementet i dokumentet.</p>
+        <p><strong>&lt;head&gt;</strong> – Metadata om sidan.</p>
+        <p><strong>&lt;title&gt;</strong> – Sidans titel.</p>
+        <p><strong>&lt;style&gt;</strong> – Intern CSS.</p>
+        <p><strong>&lt;link&gt;</strong> – Länkar externa resurser.</p>
+        <p><strong>&lt;body&gt;</strong> – Sidans innehåll.</p>
+      </section>
+
+      <section id="html-elements">
+        <h2>HTML-element</h2>
+        <p><strong>&lt;a&gt;</strong> – Länkar</p>
+        <p><strong>&lt;span&gt;</strong> – Inline-behållare</p>
+        <p><strong>&lt;p&gt;</strong> – Stycke</p>
+        <p><strong>&lt;h1&gt;–&lt;h6&gt;</strong> – Rubriker</p>
+        <p><strong>&lt;ol&gt;</strong> – Numrerad lista</p>
+        <p><strong>&lt;ul&gt;</strong> – Punktlista</p>
+        <p><strong>&lt;li&gt;</strong> – Listobjekt</p>
+        <p><strong>&lt;strong&gt;</strong> – Viktig text</p>
+        <p><strong>&lt;em&gt;</strong> – Betoning</p>
+      </section>
+
+      <section id="semantik">
+        <h2>Semantiska element</h2>
+        <p><strong>&lt;main&gt;</strong> – Huvudinnehåll</p>
+        <p><strong>&lt;header&gt;</strong> – Intro / navigation</p>
+        <p><strong>&lt;section&gt;</strong> – Avsnitt</p>
+        <p><strong>&lt;footer&gt;</strong> – Sidfot</p>
+        <p><strong>&lt;article&gt;</strong> – Självständig text</p>
+        <p><strong>&lt;aside&gt;</strong> – Sidoinnehåll</p>
+      </section>
+
+      <section id="text">
+        <h2>Text & Rubriker</h2>
+        <p>HTML används för att strukturera text och innehåll.</p>
+      </section>
+
+      <section id="layout">
+        <h2>Layout (HTML)</h2>
+        <p><strong>&lt;div&gt;</strong> – Behållare för layout</p>
+      </section>
+
+      <section id="css-typsnitt">
+        <h2>CSS – Typsnitt & stilar</h2>
+        <p>font-family, font-weight, font-style, font-size</p>
+        <p>text-decoration, text-transform</p>
+      </section>
+
+      <section id="css-farger">
+        <h2>CSS – Färger</h2>
+        <p>color, background-color, background-image, linear-gradient</p>
+      </section>
+
+      <section id="css-layout">
+        <h2>CSS – Layout</h2>
+        <p>position, display, flexbox, justify-content, align-items</p>
+        <p>gap, text-align, inset, top/right/bottom/left</p>
+      </section>
+
+      <section id="css-storlek">
+        <h2>CSS – Storlek & marginal</h2>
+        <p>width, height, max-width, min-height</p>
+        <p>margin, padding, margin-inline</p>
+      </section>
+
+      <section id="css-effekter">
+        <h2>CSS – Effekter</h2>
+        <p>object-fit, aspect-ratio</p>
+        <p>:first-child, :last-child, :nth-child()</p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <a class="footer-link" href="#home">Till toppen</a>
+  </footer>
+</body>
+
+</html>
