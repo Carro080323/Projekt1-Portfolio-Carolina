@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <a class="skip-link" href="#main-content">Hoppa till huvudinnehåll</a>
 
   <nav aria-label="Huvudnavigation">
@@ -34,108 +35,309 @@
       </div>
     </div>
   </header>
+  <main id="main-content">
 
+    <div class="page-container fade-in">
 
-  <main class="main-layout" id="main-content">
-
-    <aside class="sidebar">
-      <nav>
+      <aside class="sidebar-nav">
+        <h3>Navigation</h3>
         <ul>
-          <li><a href="#meta">Meta</a></li>
-          <li><a href="#html-elements">HTML-element</a></li>
-          <li><a href="#semantik">Semantiska element</a></li>
-          <li><a href="#text">Text & Rubriker</a></li>
-          <li><a href="#layout">Layout (HTML)</a></li>
-          <li><a href="#css-typsnitt">CSS Typsnitt & stilar</a></li>
-          <li><a href="#css-farger">CSS Färger</a></li>
-          <li><a href="#css-layout">CSS Layout</a></li>
-          <li><a href="#css-storlek">CSS Storlek & marginal</a></li>
-          <li><a href="#css-effekter">CSS Effekter</a></li>
+          <li>
+            <ol>
+              <li><a href="#Meta">Grundinfo (meta)</a></li>
+              <li><a href="#Semantiska element">Semantiska byggblock</a></li>
+              <li><a href="#Text & Rubriker">Text och rubriker</a></li>
+              <li><a href="#Layout">Sidstruktur</a></li>
+            </ol>
+          </li>
+
+          <li>
+            <a href="#CSS">CSS – design</a>
+            <ol>
+              <li><a href="#Typsnitt & Stilar">Typografi & stil</a></li>
+              <li><a href="#Färger">Färg & bakgrund</a></li>
+              <li><a href="#Layout-CSS">Layout (CSS)</a></li>
+              <li><a href="#Storlek & Marginal">Storlek & spacing</a></li>
+              <li><a href="#Effekter">Effekter & detaljer</a></li>
+            </ol>
+          </li>
         </ul>
-      </nav>
-    </aside>
+      </aside>
 
-    <div class="content-ground">
+      <section class="grund-content">
 
-      <section id="meta">
-        <h2>Meta</h2>
-        <p><strong>&lt;!DOCTYPE&gt;</strong> – Specificerar HTML-versionen.</p>
-        <p><strong>&lt;html&gt;</strong> – Rotelementet i dokumentet.</p>
-        <p><strong>&lt;head&gt;</strong> – Metadata om sidan.</p>
-        <p><strong>&lt;title&gt;</strong> – Sidans titel.</p>
-        <p><strong>&lt;style&gt;</strong> – Intern CSS.</p>
-        <p><strong>&lt;link&gt;</strong> – Länkar externa resurser.</p>
-        <p><strong>&lt;body&gt;</strong> – Sidans innehåll.</p>
+        <section id="Meta">
+          <h3>Grundinfo (meta)</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p>&lt;!DOCTYPE&gt;</p>
+              <p>Anger vilken HTML-standard sidan använder så webbläsaren tolkar innehållet rätt.</p>
+            </div>
+            <div class="element">
+              <p>&lt;html&gt;</p>
+              <p>Rot-elementet som innehåller hela HTML-dokumentet.</p>
+            </div>
+            <div class="element">
+              <p>&lt;head&gt;</p>
+              <p>Innehåller information om sidan, som metadata, länkar och inställningar.</p>
+            </div>
+            <div class="element">
+              <p>&lt;title&gt;</p>
+              <p>Bestämmer namnet som visas i webbläsarfliken.</p>
+            </div>
+            <div class="element">
+              <p>&lt;style&gt;</p>
+              <p>Låter dig skriva CSS direkt i HTML-filen.</p>
+            </div>
+            <div class="element">
+              <p>&lt;link&gt;</p>
+              <p>Används för att koppla externa filer, oftast CSS.</p>
+            </div>
+            <div class="element">
+              <p>&lt;body&gt;</p>
+              <p>Allt synligt innehåll på sidan ligger här.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Semantiska element">
+          <h3>Semantiska byggblock</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">&lt;main&gt;</p>
+              <p>Huvuddelen av sidan – det viktigaste innehållet.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;header&gt;</p>
+              <p>Introdel som ofta innehåller rubrik, logga och navigation.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;section&gt;</p>
+              <p>Delar upp sidan i tydliga avsnitt med relaterat innehåll.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;footer&gt;</p>
+              <p>Botten av sidan med info som kontakt eller copyright.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;article&gt;</p>
+              <p>Fristående innehåll som kan stå för sig själv.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;aside&gt;</p>
+              <p>Extra innehåll som är kopplat till huvudtexten, ofta sidoinfo.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Text & Rubriker">
+          <h3>Text och rubriker</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">&lt;a&gt;</p>
+              <p>Skapar klickbara länkar till andra sidor eller platser.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;span&gt;</p>
+              <p>Används för att styla små delar av text.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;p&gt;</p>
+              <p>Markerar ett stycke text.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;h1&gt;...&lt;h6&gt;</p>
+              <p>Rubriker i olika nivåer från störst till minst.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;ol&gt;</p>
+              <p>Numrerad lista i ordning.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;ul&gt;</p>
+              <p>Punktlista utan ordning.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;li&gt;</p>
+              <p>Enskilt listobjekt i en lista.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;strong&gt;</p>
+              <p>Markerar viktig text med extra tyngd.</p>
+            </div>
+            <div class="element">
+              <p class="bold">&lt;em&gt;</p>
+              <p>Betonar text genom kursiv stil.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Layout">
+          <h3>Sidstruktur</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">&lt;div&gt;</p>
+              <p>En generell behållare som används för att gruppera innehåll.</p>
+            </div>
+          </div>
+        </section>
+
+        <h2 id="CSS">CSS – design</h2>
+
+        <section id="Typsnitt & Stilar">
+          <h3>Typografi & stil</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">font-family</p>
+              <p>Bestämmer vilket typsnitt texten ska ha.</p>
+            </div>
+            <div class="element">
+              <p class="bold">font-weight</p>
+              <p>Gör text tunn eller fet.</p>
+            </div>
+            <div class="element">
+              <p class="bold">font-style</p>
+              <p>Ger texten stil som kursiv eller normal.</p>
+            </div>
+            <div class="element">
+              <p class="bold">font-size</p>
+              <p>Styr hur stor texten är.</p>
+            </div>
+            <div class="element">
+              <p class="bold">text-decoration</p>
+              <p>Lägger till t.ex. understrykning eller genomstrykning.</p>
+            </div>
+            <div class="element">
+              <p class="bold">text-transform</p>
+              <p>Ändrar textens storlek på bokstäver (VERSALER/gemener).</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Färger">
+          <h3>Färg & bakgrund</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">color</p>
+              <p>Bestämmer textfärg.</p>
+            </div>
+            <div class="element">
+              <p class="bold">background-color</p>
+              <p>Sätter bakgrundsfärg på ett element.</p>
+            </div>
+            <div class="element">
+              <p class="bold">background-image</p>
+              <p>Lägger in en bild eller gradient i bakgrunden.</p>
+            </div>
+            <div class="element">
+              <p class="bold">background</p>
+              <p>Kombinerar färg, bild eller gradient i bakgrunden.</p>
+            </div>
+            <div class="element">
+              <p class="bold">linear-gradient</p>
+              <p>Skapar en färgövergång mellan flera färger.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Layout-CSS">
+          <h3>Layout (CSS)</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">position</p>
+              <p>Bestämmer hur ett element placeras på sidan.</p>
+            </div>
+            <div class="element">
+              <p class="bold">top/right/bottom/left</p>
+              <p>Styr avstånd från kanterna i layouten.</p>
+            </div>
+            <div class="element">
+              <p class="bold">display</p>
+              <p>Bestämmer hur element visas (block, flex osv).</p>
+            </div>
+            <div class="element">
+              <p class="bold">justify-content</p>
+              <p>Justering i flexbox horisontellt.</p>
+            </div>
+            <div class="element">
+              <p class="bold">align-items</p>
+              <p>Justering i flexbox vertikalt.</p>
+            </div>
+            <div class="element">
+              <p class="bold">flex-direction</p>
+              <p>Bestämmer riktningen i en flexbox.</p>
+            </div>
+            <div class="element">
+              <p class="bold">gap</p>
+              <p>Avstånd mellan element.</p>
+            </div>
+            <div class="element">
+              <p class="bold">text-align</p>
+              <p>Justerar textens placering.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Storlek & Marginal">
+          <h3>Storlek & spacing</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">width</p>
+              <p>Bredd på ett element.</p>
+            </div>
+            <div class="element">
+              <p class="bold">height</p>
+              <p>Höjd på ett element.</p>
+            </div>
+            <div class="element">
+              <p class="bold">max-width</p>
+              <p>Maximal bredd ett element kan ha.</p>
+            </div>
+            <div class="element">
+              <p class="bold">min-height</p>
+              <p>Minsta höjd ett element kan ha.</p>
+            </div>
+            <div class="element">
+              <p class="bold">margin</p>
+              <p>Yttre avstånd runt ett element.</p>
+            </div>
+            <div class="element">
+              <p class="bold">padding</p>
+              <p>Inre avstånd i ett element.</p>
+            </div>
+            <div class="element">
+              <p class="bold">margin-inline</p>
+              <p>Avstånd vänster/höger i layout.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="Effekter">
+          <h3>Effekter & detaljer</h3>
+          <div class="element-egenskaper">
+            <div class="element">
+              <p class="bold">object-fit</p>
+              <p>Bestämmer hur bilder anpassas i sin ruta.</p>
+            </div>
+            <div class="element">
+              <p class="bold">aspect-ratio</p>
+              <p>Styr proportionerna mellan bredd och höjd.</p>
+            </div>
+            <div class="element">
+              <p class="bold">nth-child()</p>
+              <p>Väljer element baserat på position i listan.</p>
+            </div>
+          </div>
+        </section>
+
       </section>
-
-      <section id="html-elements">
-        <h2>HTML-element</h2>
-        <p><strong>&lt;a&gt;</strong> – Länkar</p>
-        <p><strong>&lt;span&gt;</strong> – Inline-behållare</p>
-        <p><strong>&lt;p&gt;</strong> – Stycke</p>
-        <p><strong>&lt;h1&gt;–&lt;h6&gt;</strong> – Rubriker</p>
-        <p><strong>&lt;ol&gt;</strong> – Numrerad lista</p>
-        <p><strong>&lt;ul&gt;</strong> – Punktlista</p>
-        <p><strong>&lt;li&gt;</strong> – Listobjekt</p>
-        <p><strong>&lt;strong&gt;</strong> – Viktig text</p>
-        <p><strong>&lt;em&gt;</strong> – Betoning</p>
-      </section>
-
-      <section id="semantik">
-        <h2>Semantiska element</h2>
-        <p><strong>&lt;main&gt;</strong> – Huvudinnehåll</p>
-        <p><strong>&lt;header&gt;</strong> – Intro / navigation</p>
-        <p><strong>&lt;section&gt;</strong> – Avsnitt</p>
-        <p><strong>&lt;footer&gt;</strong> – Sidfot</p>
-        <p><strong>&lt;article&gt;</strong> – Självständig text</p>
-        <p><strong>&lt;aside&gt;</strong> – Sidoinnehåll</p>
-      </section>
-
-      <section id="text">
-        <h2>Text & Rubriker</h2>
-        <p>HTML används för att strukturera text och innehåll.</p>
-      </section>
-
-      <section id="layout">
-        <h2>Layout (HTML)</h2>
-        <p><strong>&lt;div&gt;</strong> – Behållare för layout</p>
-      </section>
-
-      <section id="css-typsnitt">
-        <h2>CSS – Typsnitt & stilar</h2>
-        <p>font-family, font-weight, font-style, font-size</p>
-        <p>text-decoration, text-transform</p>
-      </section>
-
-      <section id="css-farger">
-        <h2>CSS – Färger</h2>
-        <p>color, background-color, background-image, linear-gradient</p>
-      </section>
-
-      <section id="css-layout">
-        <h2>CSS – Layout</h2>
-        <p>position, display, flexbox, justify-content, align-items</p>
-        <p>gap, text-align, inset, top/right/bottom/left</p>
-      </section>
-
-      <section id="css-storlek">
-        <h2>CSS – Storlek & marginal</h2>
-        <p>width, height, max-width, min-height</p>
-        <p>margin, padding, margin-inline</p>
-      </section>
-
-      <section id="css-effekter">
-        <h2>CSS – Effekter</h2>
-        <p>object-fit, aspect-ratio</p>
-        <p>:first-child, :last-child, :nth-child()</p>
-      </section>
-
     </div>
   </main>
 
   <footer>
     <a class="footer-link" href="#home">Till toppen</a>
   </footer>
+
 </body>
 
 </html>
